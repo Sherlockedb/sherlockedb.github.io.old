@@ -51,6 +51,9 @@ baseurl: ''
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Shanghai
 
+gems:
+- jekyll-seo-tag
+
 google_analytics:
   id: ''          # Fill with your Google Analytics ID
   pv:
