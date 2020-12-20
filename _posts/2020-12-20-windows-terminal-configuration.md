@@ -17,24 +17,37 @@ lang: zh
 
 ## SSH配置
 * 在用户目录下的`.ssh`文件夹下，创建`config`文件，按如下格式填写，`host`是标签，写个你知道的，`hostname`就是服务器的ip或者域名，其它的顾名思义。比如我这样配置后，就可以在`powershell`用命令`ssh dev`连上服务器。
-            ![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162246.png)
+
+![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162246.png)
 
 ---
             
 ## Windows Terminal 配置
 在微软应用商店下载`Windows Terminal`，下载完成后打开，用`ctrl+,`打开配置文件`settings.json`进行如下配置：
-+ session管理配置
-            如图，模仿`cmd`和`powershell`填写配置，我添加了开发机(`ssh dev`)配置。
-			![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162348.png)
-            若需要修改默认终端，则把`defaultProfile`配置成对于的`guid`即可。
-			![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162409.png)
-    在命令行里面用`wt -p {session_name}`可以在新窗口打开对应session.(下面右键打开`powershell`用到了这个命令)
-+ 主题配置
-            主题配置是在`profiles->schemes`下，可从[Windows Terminal Themes](https://windowsterminalthemes.dev)获取对应配置
-			![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162501.png)
-+ 快捷键配置
-            快捷键绑定也可以自己配置，我主要添加了一些常用命令输入的快捷键，用`sendInput`可以绑定快捷键输入固定字符，比如`ctrl+5`就是打印`/sbin/ifconfig | grep inet\u000D`到终端，`\u000D`是回车。
-			![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162525.png)
+
+### session管理配置
+
+如图，模仿`cmd`和`powershell`填写配置，我添加了开发机(`ssh dev`)配置。
+
+![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162348.png)
+
+若需要修改默认终端，则把`defaultProfile`配置成对于的`guid`即可。
+
+![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162409.png)
+
+在命令行里面用`wt -p {session_name}`可以在新窗口打开对应session.(下面右键打开`powershell`用到了这个命令)
+
+### 主题配置
+
+主题配置是在`profiles->schemes`下，可从[Windows Terminal Themes](https://windowsterminalthemes.dev)获取对应配置
+
+![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162501.png)
+
+### 快捷键配置
+
+快捷键绑定也可以自己配置，我主要添加了一些常用命令输入的快捷键，用`sendInput`可以绑定快捷键输入固定字符，比如`ctrl+5`就是打印`/sbin/ifconfig | grep inet\u000D`到终端，`\u000D`是回车。
+
+![](https://gitee.com/sherlockedb/gitee.page/raw/ge-pages/blog/20201218162525.png)
 
 ---
 
