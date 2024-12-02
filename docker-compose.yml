@@ -1,7 +1,7 @@
 services:
-  jekyll:
+  jekyll_sherlockedb:
     image: gh-pages-env
-    container_name: jekyll-container
+    container_name: sherlockedb_gh_pages
     restart: always
     volumes:
       - .:/srv/jekyll # 当前目录挂载到容器
